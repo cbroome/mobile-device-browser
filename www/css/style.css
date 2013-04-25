@@ -1,0 +1,711 @@
+/*
+Theme Name: Dither Theme URI: http://wordpress.org/
+Description: Custom theme for dither and bicker.
+Version: 0.1
+Author: 
+Author URI: 
+Tags: blue, custom header, fixed width, two columns, widgets
+
+	Dither v0.1
+
+*/
+
+
+
+/*
+ * http://colorschemedesigner.com/#3R51TrjrXl2Iu
+ * ~~http://colorschemedesigner.com/#1t21Trrj3w0w0~~
+ */
+
+/* force right scrollbar: http://blog.nanorails.com/articles/2006/3/11/forcing-the-right-scrollbar-to-appear-on-your-web-page */
+html { 
+    overflow-y : scroll
+}
+
+
+body {
+    font-family: Tahoma, Helevetica, Arial;
+    font-size: 14px;
+    margin: 0 0;
+    padding: 0;
+    color: #54544A;
+}
+
+.content {
+    width: 1024px;
+    margin: 0 auto;
+    clear: both;
+    position: relative;
+}
+
+
+
+h1 {
+    color: #142775;
+}
+
+h2 {
+    color: #2F3F7F;
+    font-weight: normal;
+}
+
+.container  {
+    display: block;
+}
+
+a {
+    color: #9572E1;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Generic classes -------------------------------------------------- */
+.clearit {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+.simpleTitle {
+    font-size: 17px;
+    color: black;
+}
+.even {
+    background-color: #eee;
+}
+
+.separator {
+    height: 15px;
+    width: 1px;
+    overflow: hidden;
+    border-left: 1px solid;
+}
+
+.moveableSlab {
+    position: absolute;
+}
+
+.columnHalf {
+    float: left;
+    width: 490px;
+}
+
+.columnOneThird {
+    float: left;
+    width: 340px;
+}
+
+.columnTwoThirds {
+    float: left;
+    width: 680px;
+}
+
+.wurflGUI .columnHalf, .wurflGUI .columnOneThird, .wurflGUI .columnTwoThirds {
+    height: 490px;
+    overflow: auto;
+    padding: 0 15px;
+}
+
+.wurflGUI #columnQuery.columnOneThird {
+    width: 295px;
+}
+
+.wurflGUI #columnCapeSelect, .wurflGUI #columnQuery {
+    border-right: 1px solid #A4B0E1;
+}
+
+/* ------------------------------------------------------------------ */
+/* Header ----------------------------------------------------------- */
+
+#gradDest {
+    height: 30px;
+}
+
+.header {
+    padding: 20px 0 0;
+    background: #A4B0E1 url(../images/bg.gradient.png) repeat-x top;
+    height: 42px;
+    border-bottom: 1px solid #748AE1;
+    position: relative;
+    z-index: 15;
+}
+
+
+.header h1 {
+    font-weight: normal;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    float:left;
+    width: 620px;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: #142775;
+    border: none;
+}
+
+.header h1 a img {
+    border: none;
+}
+
+.header .links {
+    padding-top: 5px;
+}
+
+
+
+body.wurflGUI a {
+    color: #142775;
+}
+
+.header .titleBlock {
+    float: left;
+    width: 310px;
+    padding-right: 10px; 
+}
+
+.titleBlock h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    /* color: #2F1968; */
+}
+
+.titleBlock .disclaimer {
+    font-size: 12px;
+}
+
+.titleBlock .disclaimer .version {
+    text-decoration: underline;
+}
+
+.header .missionStatement {
+    float: left;
+    padding-left: 20px;
+    border-left: 1px solid #0D566B;
+    color: #0D566B;
+    width: 550px;
+}
+
+.header .description {
+    color: #2F3F7F;
+}
+
+.header .left {
+    float: left;
+    width: 350px;
+}
+
+.header .right {
+    float: left;
+    width: 600px;
+    margin-top: 27px;
+}
+
+.header .link {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    float:left;
+    margin-right: 25px;
+}
+
+.header .separator {
+    padding: 0 5px 0 5px;
+}
+
+.header .link a {
+    color: #142775;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.header .link a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.header .boxes {
+    float: left;
+    width: 192px;
+}
+.header .donateHolder {
+    float: left;
+    padding-left: 5px;
+    width: 75px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.header .contactBox {
+    float: left;
+    width: 50px;
+    line-height: 50px;
+    margin: 10px 0 0 20px;
+}
+
+.header .contactBox a {
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    height: 32px;
+    width: 32px;
+    background: url(../images/email_32x32.png) no-repeat;
+}
+
+.header .contactBox a span {
+    display: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Description ------------------------------------------------------ */
+.header-description {
+    clear: both;
+    /* background: #B7A3E1;*/
+    background: url(../images/bg.gray.gradient.jpg) repeat-x top;
+    position: relative;
+    top: -13px;
+    z-index: 10;
+}
+
+.header-description .titleBlock {
+    padding-top: 5px;
+}
+/* ------------------------------------------------------------------ */
+/* Footer ----------------------------------------------------------- */
+.footer {
+    clear: both;
+    margin: 30px 0 20px;
+}
+
+.footer .linkbar {
+    border-top: 1px solid #A4B0E1;
+    padding: 25px 0;
+    text-align: center;
+
+}
+/* ------------------------------------------------------------------ */
+/* Posts ------------------------------------------------------------ */
+.post {
+    padding: 0 0 30px;
+}
+
+.post h2 {
+    padding-bottom: 2px;
+    margin-bottom: 0px;
+}
+
+.post h2 a {
+    color: #142775;
+    text-decoration: none;
+}
+
+.post .entry {
+    margin-left: 10px;
+}
+/* ------------------------------------------------------------------ */
+/* Layout ----------------------------------------------------------- */
+.narrowcolumn {
+	width: 700px;
+	float:left;
+}
+.sidebar {
+	width: 300px;
+	margin-left: 10px;
+	float: left;
+}
+.sidebar ul {
+	list-style: none;
+}
+
+.sidebar h2 {
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+
+
+#searchform input[type=text] {
+	width: 125px;
+	font-size: 11px;
+}
+#searchform label {
+	color: #2F3F7F;
+}
+/* ------------------------------------------------------------------ */
+/* Search form ------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+/* Loaders ---------------------------------------------------------- */
+.pback {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 1201;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}
+.pfront {
+    position: absolute;
+   /* height: 100%;*/
+    width: 100%;
+    z-index: 1202;
+    text-align:center;
+    padding-top: 150px;
+    font-size: 20px;
+    color: #2E214E;
+    
+}
+/* ------------------------------------------------------------------ */
+/* Scriptaculous AutoComplete Form ---------------------------------- */
+input.autocomplete {
+    width: 372px;
+}
+
+div.autocomplete {
+  margin:0px;  
+  padding:0px;  
+  width: 320px;
+  background:#fff;
+  border:1px solid #888;
+  position:absolute;
+  overflow: auto;
+  max-height: 100px;
+  color: #555;
+  font-size: 11px;
+}
+
+div.autocomplete ul {
+  margin:0px;
+  padding:0px;
+  list-style-type:none;
+}
+
+div.autocomplete ul li.selected { 
+  background-color:#A4B0E1;
+  color: black;
+}
+
+div.autocomplete ul li {
+  margin:0;
+  padding:2px;
+  min-height:18px;
+  display:block;
+  list-style-type:none;
+  cursor:pointer;
+}
+
+div.autocomplete strong {
+    color: #142775;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------ */
+/* Query Box -------------------------------------------------------- */
+.queryBox {
+    margin-bottom: 20px;
+}
+
+.queryBox .title {
+    margin: 15px 0 5px;
+    font-size: 15px;
+    color: #263C98;
+}
+
+
+.queryBox .box {
+    float: left;
+    width: 160px;
+    text-align: center;
+}
+
+.queryBox .box select {
+    width: 150px;
+}
+
+.queryBox .simpleTitle {
+    text-align: center;
+
+}
+
+.queryBox #capabilityQueryDest {
+    height: 200px;
+    overflow: auto;
+}
+
+
+
+#bmselect .explain {
+    text-align: center;
+}
+
+.queryBox .groupTree {
+    height: 275px;
+    width: 470px;
+    overflow: auto;
+    background: #FAFAFC;
+}
+
+.groupTree .group {
+    margin: 0 5px 10px 5px;
+}
+
+.groupTree .name {
+    font-size:15px;
+    border-bottom: 1px solid #555;
+    width: 405px;
+}
+
+.groupTree .capabilities {
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.groupTree .odd {
+    background: #fff;
+}
+
+.groupTree .capability {
+    padding: 2px 5px;
+}
+
+.groupTree .question-mark {
+    cursor: help;
+    
+}
+
+
+/* ------------------------------------------------------------------ */
+/* capabilityEdit --------------------------------------------------- */
+#capabilityEdit .window .name {
+    font-size: 17px;
+}
+
+#capabilityEdit #group_name {
+    font-weight: bold;
+}
+
+#capabilityEdit .capabilty_controls {
+    margin-top: 15px;
+}
+
+/* ------------------------------------------------------------------ */
+/* capabilityCriteria ----------------------------------------------- */
+.capabilityCriteria {
+    margin: 2px 2px 5px;
+    padding: 2px 5px 5px 5px;
+    width: 290px;
+}
+
+.capabilityCriteria input {
+    font-size: 11px;
+}
+
+.capabilityCriteria label {
+    display: block;
+    float: left;
+    width: 100px;
+    text-align: right;
+    line-height: 23px;
+    color: #142775;
+    margin-right: 10px;
+}
+
+.capabilityCriteria .name {
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.capabilityCriteria .closer {
+    background-color: #142775;
+    color: #FFFFFF;
+    width: 20px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    height: 20px;
+    line-height: 18px;
+    border: 1px solid #A4B0E1;
+}
+
+.capabilityCriteria .boolbox label {
+    display: inline;
+    float: none;
+    border: none;
+    font-size: 12px;
+    background: none;
+}
+
+.capabilityCriteria .bool {
+    width: 120px;
+    float:left;
+}
+
+.capabilityCriteria .description {
+    font-size: 11px;
+    font-style: italic;
+    text-align: right;
+}
+
+.capabilityCriteria .cleared {
+    clear:both;
+    margin: 2px 0;
+}
+/* ------------------------------------------------------------------ */
+/* destination ------------------------------------------------------ */
+#destination {
+    height: 275px;
+    padding: 5px;
+    overflow: auto;
+    border: 1px solid #635407;
+}
+/* ------------------------------------------------------------------ */
+/* resultHeader ----------------------------------------------------- */
+.resultHeader .simpleTitle {
+    float: left;
+    width: 70px;
+}
+
+.resultHeader .outputs {
+    float: left;
+    width: 300px;
+    line-height: 22px;
+}
+/* ------------------------------------------------------------------ */
+/* resultPhone ------------------------------------------------------ */
+.resultPhone {
+    clear: both;
+    border-bottom: 1px solid #635407;
+    padding: 5px;
+}
+
+.resultPhone .nameBox {
+    float:left;
+    width: 250px;
+}
+
+.resultPhone .nameBox .name {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #2F1968;
+}
+
+.resultPhone .nameBox .name:hover {
+    color: #190844;
+}
+
+.resultPhone .descBox {
+    float: left;
+    width: 600px;
+}
+
+.resultPhone .descBox .name {
+    float: left;
+    width: 350px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.resultPhone .descBox .value {
+    width: 230px;
+    float: left;
+    margin-left: 10px;
+}
+
+.resultPhone .selected {
+    color: #190844;
+    background: #B7A3E1;
+}
+
+/* ------------------------------------------------------------------ */
+/* Single Page View ------------------------------------------------- */
+.single .widecolumn {
+    width: 640px;
+}
+/* ------------------------------------------------------------------ */
+/* capability editor ------------------------------------------------ */
+#capabilityEdit {
+    padding-top: 25px;
+}
+
+#capabilityEdit .window {
+     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    
+    border: 1px solid;
+    background: white;
+    padding: 15px;
+    
+    text-align: left;
+    width: 700px;
+    
+    margin: 0 auto;
+    
+    font-size: 12px;
+}
+
+#capabilityEdit .closeButton {
+    float: right;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#capabilityEdit #capabilityQueryDest {
+    float: left;
+    width: 300px;
+    
+}
+
+#capabilityEdit .line {
+    clear: both;
+    font-weight: bold;
+}
+
+#capabilityEdit #instructions, #capabilityEdit #capability_description {
+    clear: both;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+.section .title {
+    
+    margin: 15px 0 20px;
+    font-size: 17px;
+    text-align: center;
+    color: #263C98;
+    
+}
+
+.section .description {
+    
+    margin: 10px 0;
+}
+/* ------------------------------------------------------------------ */
+/* criteriaForm ----------------------------------------------------- */
+#criteriaForm .criteriaName {
+    text-decoration: underline;
+}
+/* ------------------------------------------------------------------ */
+
+#capeOptIn {
+    border: 1px dashed #A4B0E1;
+    color: #142775;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#columnResults .options {
+    text-align: center;
+    margin-top: 10px;
+}

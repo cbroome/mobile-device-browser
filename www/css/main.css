@@ -1,0 +1,359 @@
+/*
+ * http://colorschemedesigner.com/#1t21Trrj3w0w0 
+ */
+
+body {
+    font-family: Tahoma, Helevetica, Arial;
+    font-size: 12px;
+    margin: 0 0;
+    padding: 0;
+}
+
+.content {
+    width: 1024px;
+    margin: 0 auto;
+    clear: both;
+    position: relative;
+}
+
+
+
+h1 {
+    color: #635407;
+}
+
+h2 {
+    color: #726629;
+}
+
+.container  {
+    display: block;
+}
+
+a {
+    color: #694DB4;
+}
+
+a:hover {
+    color: #190844;
+}
+
+/* Generic classes -------------------------------------------------- */
+.clearit {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+.simpleTitle {
+    font-size: 17px;
+    color: #726629;
+}
+.even {
+    background-color: #eee;
+}
+.linkbar {
+    text-align: center;
+}
+.cleared {
+    clear: both;
+}
+
+/* ------------------------------------------------------------------ */
+/* Header ----------------------------------------------------------- */
+.header {
+    padding: 10px;
+    background: #CBBC6C;
+    border-bottom: 5px solid #635407;
+    margin-bottom: 10px;
+}
+.header h1 {
+    font-weight: normal;
+}
+
+.header .titleBlock {
+    float: left;
+    width: 327px;
+    padding-right: 10px; 
+}
+
+.titleBlock h2 {
+    font-size: 13px;
+    font-weight: normal;
+    color: #2F1968;
+}
+
+body.wurflGUI .header h1 {
+    float: left;
+    width: 325px;
+    margin: 0px;
+    padding: 0px;
+}
+.header .missionStatement {
+    float: left;
+    padding-left: 20px;
+    border-left: 1px solid #635407;
+    color: #635407;
+    width: 550px;
+}
+
+.header .boxes {
+    float: left;
+    width: 185px;
+}
+.header .donateHolder {
+    float: left;
+    padding-left: 5px;
+    width: 75px;
+    text-align: center;
+}
+.header .linkbar {
+    text-align: left;
+}
+.header .linkbar a {
+    text-decoration: none;
+    color: #694DB4;
+    font-size: 15px;
+}
+/* ------------------------------------------------------------------ */
+/* Footer ----------------------------------------------------------- */
+.footer {
+    border-top: 1px solid #CBBC6C;
+}
+/* ------------------------------------------------------------------ */
+/* Loaders ---------------------------------------------------------- */
+.pback {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 1201;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}
+.pfront {
+    position: absolute;
+   /* height: 100%;*/
+    width: 100%;
+    z-index: 1202;
+    text-align:center;
+    padding-top: 150px;
+    font-size: 20px;
+    color: #2E214E;
+    
+}
+/* ------------------------------------------------------------------ */
+/* Scriptaculous AutoComplete Form ---------------------------------- */
+input.autocomplete {
+    width: 285px;
+}
+
+div.autocomplete {
+  margin:0px;  
+  padding:0px;  
+  width: 320px;
+  background:#fff;
+  border:1px solid #888;
+  position:absolute;
+  overflow: auto;
+  max-height: 100px;
+  color: #555;
+  font-size: 11px;
+}
+
+div.autocomplete ul {
+  margin:0px;
+  padding:0px;
+  list-style-type:none;
+}
+
+div.autocomplete ul li.selected { 
+  background-color:#CBBC6C;
+  color: black;
+}
+
+div.autocomplete ul li {
+  margin:0;
+  padding:2px;
+  min-height:18px;
+  display:block;
+  list-style-type:none;
+  cursor:pointer;
+}
+
+div.autocomplete strong {
+    color: #2F1968;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------ */
+/* Query Box -------------------------------------------------------- */
+.queryBox {
+    float: left;
+    width: 341px;
+}
+
+.queryBox .box {
+    float: left;
+    width: 160px;
+    text-align: center;
+}
+
+.queryBox .box select {
+    width: 150px;
+}
+
+.queryBox .simpleTitle {
+    text-align: center;
+
+}
+
+.queryBox #capabilityQueryDest {
+    height: 175px;
+    overflow: auto;
+}
+
+.queryBox .explain {
+    color: #726629;
+}
+
+#bmselect .explain {
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* capabilityCriteria ----------------------------------------------- */
+.capabilityCriteria {
+    margin: 2px;
+    border: 1px solid #CBBC6C;
+    border-bottom-color: #726629;
+    border-right-color: #726629;
+    padding: 2px 5px;
+    width: 300px;
+}
+
+.capabilityCriteria input {
+    font-size: 11px;
+}
+
+.capabilityCriteria label {
+    height: 15px;
+    line-height: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 30px;
+    margin: 3px 10px; 
+    border: 1px solid #635407;
+    background: #CBB749;
+    color: #635407;
+}
+
+.capabilityCriteria .closer {
+    background-color: #CBB749;
+    color: #2F1968;
+    width: 20px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    height: 15px;
+    line-height: 13px;
+    border: 1px solid #190844;
+    font-weight: bold;
+}
+
+.capabilityCriteria .boolbox label {
+    display: inline;
+    float: none;
+    border: none;
+    color: black;
+    font-size: 12px;
+    background: none;
+}
+
+.capabilityCriteria .bool {
+    width: 120px;
+    float:left;
+}
+
+.capabilityCriteria .description {
+    font-size: 11px;
+    font-style: italic;
+    text-align: right;
+}
+/* ------------------------------------------------------------------ */
+/* destination ------------------------------------------------------ */
+#destination {
+    height: 300px;
+    padding: 5px;
+    overflow: auto;
+    border: 1px solid #635407;
+}
+/* ------------------------------------------------------------------ */
+/* resultHeader ----------------------------------------------------- */
+.resultHeader .simpleTitle {
+    float: left;
+    width: 70px;
+}
+
+.resultHeader .outputs {
+    float: left;
+    width: 300px;
+    line-height: 22px;
+}
+/* ------------------------------------------------------------------ */
+/* resultPhone ------------------------------------------------------ */
+.resultPhone {
+    clear: both;
+    border-bottom: 1px solid #635407;
+    padding: 5px;
+}
+
+.resultPhone .nameBox {
+    float:left;
+    width: 250px;
+}
+
+.resultPhone .nameBox .name {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #2F1968;
+}
+
+.resultPhone .nameBox .name:hover {
+    color: #190844;
+}
+
+.resultPhone .descBox {
+    float: left;
+    width: 600px;
+}
+
+.resultPhone .descBox .name {
+    float: left;
+    width: 350px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.resultPhone .descBox .value {
+    width: 230px;
+    float: left;
+    margin-left: 10px;
+}
+
+.resultPhone .selected {
+    color: #190844;
+    background: #CBBC6C;
+}
+
+/* ------------------------------------------------------------------ */
+/* messages --------------------------------------------------------- */
+#subMessage {
+    width: 640px;
+    font-size: 15px;
+    margin: 15px auto;
+    
+}
+/* ------------------------------------------------------------------ */
